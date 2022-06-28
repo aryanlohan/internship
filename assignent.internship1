@@ -1,0 +1,221 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "2f0a6450",
+   "metadata": {},
+   "source": [
+    "# Question-11"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "e5b06f38",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 43\n",
+      "The factorial of 43 is 60415263063373835637355132068513997507264512000000000\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = int(input(\"Enter a number: \"))    \n",
+    "factorial = 1    \n",
+    "if num < 0:    \n",
+    "   print(\" Factorial does not exist for negative numbers\")    \n",
+    "elif num == 0:    \n",
+    "   print(\"The factorial of 0 is 1\")    \n",
+    "else:    \n",
+    "   for i in range(1,num + 1):    \n",
+    "       factorial = factorial*i    \n",
+    "   print(\"The factorial of\",num,\"is\",factorial)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5e56c753",
+   "metadata": {},
+   "source": [
+    "# Question-12"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "b8d4d302",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 55\n"
+     ]
+    }
+   ],
+   "source": [
+    "num = int(input(\"Enter a number: \"))\n",
+    "flag = False\n",
+    "if num > 1:\n",
+    "    for i in range(2, num):\n",
+    "        if (num % i) == 0:\n",
+    "            flag = True\n",
+    "            break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5a23098a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "55 is a composite number.\n"
+     ]
+    }
+   ],
+   "source": [
+    "if flag:\n",
+    "    print(num, \"is a composite number.\")\n",
+    "else:\n",
+    "    print(num, \"is a prime number.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4df1a911",
+   "metadata": {},
+   "source": [
+    "# Question-13"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "e56c343c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter string: 88\n",
+      "Yes, it's Palindrome.\n"
+     ]
+    }
+   ],
+   "source": [
+    "s = input(\"Enter string: \")\n",
+    "if s[::-1]==s:\n",
+    "\tprint(\"Yes, it's Palindrome.\")\n",
+    "else:\n",
+    "\tprint(\"No, its not a Palindrome.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "067bb14a",
+   "metadata": {},
+   "source": [
+    "# Question-14"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "7cbc3f93",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the first side:9\n",
+      "Enter the second side:1\n",
+      "The third side for the right angled triangle is :  9\n"
+     ]
+    }
+   ],
+   "source": [
+    "AB,BC=int(input(\"Enter the first side:\")),int(input(\"Enter the second side:\"))\n",
+    "AC=int(((AB*AB)+(BC**2))**0.5)\n",
+    "print(\"The third side for the right angled triangle is : \",AC)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c000d1d8",
+   "metadata": {},
+   "source": [
+    "# Question-15"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "39ee7406",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the String:34\n",
+      "Frequency of each of the characters present in a  string is :\n",
+      " {'3': 1, '4': 1}\n"
+     ]
+    }
+   ],
+   "source": [
+    "string = input(\"Enter the String:\")\n",
+    "char_freq = {}\n",
+    "\n",
+    "for i in string:\n",
+    "    if i in char_freq:\n",
+    "        char_freq[i] += 1\n",
+    "    else:\n",
+    "        char_freq[i] = 1\n",
+    "print (\"Frequency of each of the characters present in a  string is :\\n \"+ str(char_freq))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a8e576a9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
